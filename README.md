@@ -18,6 +18,8 @@ This repository contains my beginner Hack The Box learning notes and cybersecuri
 - Fawn
 - Dancing
 - Redeemer
+ScreenShot
+<img width="1095" height="619" alt="Screenshot 2026-05-27 061345" src="https://github.com/user-attachments/assets/d137db82-7580-45f8-8c12-217c541f83c3" />
 
 ## Goal
 
