@@ -61,7 +61,78 @@ get key-name
 Retrieves stored values.
 
 ---
+# Hack The Box Notes: Redeemer
 
+## Commands Used
+
+### Scan Open Ports
+
+```bash
+nmap -sV target-ip
+```
+
+### What It Does
+Scans for open ports and identifies services.
+
+### Why It Matters
+Used to discover Redis running on the target system.
+
+---
+
+## Connect to Redis
+
+```bash
+redis-cli -h target-ip
+```
+
+### What It Does
+Connects to the Redis database service.
+
+### Breakdown
+- `redis-cli` = Redis command-line tool
+- `-h` = specifies target host
+
+### Why It Matters
+Allows interaction with the Redis database.
+
+---
+
+## View Database Keys
+
+```bash
+keys *
+```
+
+### What It Does
+Lists all available keys stored in Redis.
+
+### Why It Matters
+Enumeration often involves identifying stored data or sensitive values.
+
+---
+
+## Retrieve Stored Values
+
+```bash
+get key-name
+```
+
+### What It Does
+Retrieves the value associated with a Redis key.
+
+### Why It Matters
+Helps analysts understand exposed data inside databases.
+
+---
+
+# Skills Practiced
+
+- Redis
+- Linux
+- Networking
+- Enumeration
+- Databases
+- Cybersecurity fundamentals
 # What I Learned
 
 - Redis databases can expose sensitive information
